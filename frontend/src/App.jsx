@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 import { lazy } from "react";
 import './App.module.css'
-import RightClickPrevention from "./Security/RightClickPrevention/RightClickPrevention";
+import RightClickPrevention from "./AddOn/RightClickPrevention/RightClickPrevention";
 
 const MainPage = lazy(() =>
   import('./modules/Pages/MainPage/MainPage')
@@ -22,7 +22,8 @@ function App() {
 
   return (
     <>
-      <RightClickPrevention />
+      {/* <RightClickPrevention /> */} 
+      {/* enable after completion */}
       <RouterProvider router={router} />
     </>
   )
