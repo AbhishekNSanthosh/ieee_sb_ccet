@@ -4,6 +4,7 @@ import {
   Navigate
 } from "react-router-dom";
 import { lazy } from "react";
+import './App.module.css'
 
 const MainPage = lazy(() =>
   import('./modules/Pages/MainPage/MainPage')
