@@ -3,7 +3,7 @@ import './MainPage.module.css'
 
 const MainPage = () => {
   return (
-    <div>MainPage hey</div>
+    <div>MainPage he y</div>
   )
 }
 
