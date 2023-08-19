@@ -1,5 +1,6 @@
 .aboutContainer {
-    padding: 40px;
+    margin-top: 40px;
+    padding: 50px 80px;
     display: flex;
     flex-direction: column;
 }

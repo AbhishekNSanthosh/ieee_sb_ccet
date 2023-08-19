@@ -3,6 +3,7 @@ import styles from './MainPage.module.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Banner from '../../components/Banner/Banner'
 import About from '../../components/About/About'
+import Branch from '../../components/Branch/Branch'
 
 const MainPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage = () => {
       <Navbar/>
       <Banner/>
       <About/>
+      <Branch/>
     </div>
   )
 }

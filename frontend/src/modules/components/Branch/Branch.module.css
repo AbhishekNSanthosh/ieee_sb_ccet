@@ -1,0 +1,51 @@
+.branchContainer {
+    margin-top: 30px;
+    display: flex;
+    padding: 50px 80px;
+    gap: 30px;
+}
+
+.branchCol {
+    flex: 6;
+}
+
+.cardLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px 1px rgb(161, 154, 253);
+    border-radius: 10px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.05s all ease;
+}
+
+.cardLeft:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.01)
+}
+
+
+.cardRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 3px 1px rgb(161, 154, 253);
+    border-radius: 10px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.05s all ease;
+}
+
+.cardRight:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.01)
+}
+
+.cardTxt {
+    font-size: 20px;
+}

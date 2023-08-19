@@ -21,7 +21,7 @@ const About = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={animationVariants}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.5 }}
         >
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutRow}>
