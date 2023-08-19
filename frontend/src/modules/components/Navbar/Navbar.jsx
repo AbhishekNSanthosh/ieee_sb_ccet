@@ -11,13 +11,13 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.navbarRightCol}>
-          {navData && navData.map((data, index) => (
-        <div className={styles.navbarRightColItemDiv}>
+        {navData && navData.map((data, index) => (
+          <div className={styles.navbarRightColItemDiv}>
             <h1 className={styles.navbarRightItem}>
               {data}
             </h1>
-        </div>
-          ))}
+          </div>
+        ))}
       </div>
     </div>
   )
