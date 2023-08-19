@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 12vh;
-    padding:8px 50px;
+    height: 10vh;
+    padding: 8px 50px;
 }
 
 .navbarLeftCol {
@@ -13,23 +13,41 @@
     justify-content: start;
 }
 
-.navbarRightCol{
+.navbarRightCol {
     flex: 5;
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.navbarLogo{
+.navbarLogo {
     height: 5rem;
 }
 
-.navbarRightItem{
-    
+.navbarRightItem {
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 1.0px;
     text-transform: capitalize;
     cursor: pointer;
+}
+
+.navbarRightColItemDiv {
+    position: relative;
+}
+
+.navbarRightColItemDiv::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 68, 255);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbarRightColItemDiv:hover::after {
+    width: 100%;
 }

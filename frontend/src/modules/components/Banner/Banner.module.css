@@ -1,10 +1,71 @@
 .bannerContainer {
     display: flex;
-    height: 95vh;
+    height: 90vh;
+    /* position: relative; */
 }
 
 .bannerImg {
     display: flex;
     width: 100%;
     object-fit: cover;
+}
+
+.absoluteTxt {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    /* Position it at the vertical center */
+    right: 0;
+    /* Position it at the right side */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.txtTop {
+    font-size: 32px;
+}
+
+.clgTxt {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.clgNameBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    flex: 3;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color:rgba(10, 10, 51, 0.315);
+    color: #fff;
+    backdrop-filter: blur(2px);
+}
+
+.right {
+    flex: 9;
+    display: flex;
+}
+
+.ieeeLogo {
+    height: 3rem;
+}
+
+.carmelLogo {
+    height: 5rem;
 }
