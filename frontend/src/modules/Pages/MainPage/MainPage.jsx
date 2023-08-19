@@ -1,11 +1,13 @@
 import React from 'react'
-import './MainPage.module.css'
+import styles from './MainPage.module.css'
 import Navbar from '../../components/Navbar/Navbar'
+import Banner from '../../components/Banner/Banner'
 
 const MainPage = () => {
   return (
-    <div>
+    <div className={styles.home}>
       <Navbar/>
+      <Banner/>
     </div>
   )
 }
