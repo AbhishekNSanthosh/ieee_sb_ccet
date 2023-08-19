@@ -5,19 +5,21 @@ import { navData } from '../../../services/ieeeData'
 const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
-      <div className={styles.navbarLeftCol}>
-        <div className={styles.navbarLeftColItemDiv}>
-          <img src={logoBlue} alt="" className={styles.navbarLogo} />
-        </div>
-      </div>
-      <div className={styles.navbarRightCol}>
-        {navData && navData.map((data, index) => (
-          <div className={styles.navbarRightColItemDiv}>
-            <h1 className={styles.navbarRightItem}>
-              {data}
-            </h1>
+      <div className={styles.navWrapper}>
+        <div className={styles.navbarLeftCol}>
+          <div className={styles.navbarLeftColItemDiv}>
+            <img src={logoBlue} alt="" className={styles.navbarLogo} />
           </div>
-        ))}
+        </div>
+        <div className={styles.navbarRightCol}>
+          {navData && navData.map((data, index) => (
+            <div className={styles.navbarRightColItemDiv}>
+              <h1 className={styles.navbarRightItem}>
+                {data}
+              </h1>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
