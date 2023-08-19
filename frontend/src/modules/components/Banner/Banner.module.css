@@ -1,6 +1,6 @@
 .bannerContainer {
     display: flex;
-    height: 100vh;
+    height: 98vh;
 }
 
 .bannerImg {
@@ -44,6 +44,7 @@
 
 .ieeeLogo {
     height: 3rem;
+    margin-right: 30px;
 }
 
 .carmelLogo {
