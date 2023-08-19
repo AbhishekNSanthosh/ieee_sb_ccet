@@ -1,0 +1,35 @@
+.aboutContainer {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutTitle {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.aboutRowBtm {
+    display: flex;
+}
+
+.aboutRowColLeft {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.aboutData{
+    display: flex;
+    font-size: 18px;
+}
+
+.aboutRowColRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
