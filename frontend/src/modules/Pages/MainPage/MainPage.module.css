@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
 .eventBtn {
@@ -19,7 +19,7 @@
     justify-content: center;
     display: flex;
     border-radius: 10px;
-    border:1px solid blue;
+    border: 1px solid blue;
     color: blue;
     text-transform: capitalize;
     font-size: 20px;
@@ -29,4 +29,6 @@
 
 .eventBtn:hover {
     transform: scale(1.03);
+    background-color: blue;
+    color: #fff;
 }

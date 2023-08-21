@@ -4,17 +4,21 @@ import Navbar from '../../components/Navbar/Navbar'
 import Banner from '../../components/Banner/Banner'
 import About from '../../components/About/About'
 import Branch from '../../components/Branch/Branch'
+import Footer from '../../components/Footer/Footer'
 
 const MainPage = () => {
   return (
     <div className={styles.home}>
       <Navbar />
       <Banner />
-      <About />
+     <section id='about-section'>
+     <About id="about-section"/>
+     </section>
       <Branch />
       <div className={styles.eventContainer}>
         <button className={styles.eventBtn}>Events</button>
       </div>
+      <Footer/>
     </div>
   )
 }
