@@ -3,3 +3,30 @@
     flex-direction: column;
     width: 100%;
 }
+
+.eventContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.eventBtn {
+    width: 15%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    border:1px solid blue;
+    color: blue;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1.ms ease;
+}
+
+.eventBtn:hover {
+    transform: scale(1.03);
+}

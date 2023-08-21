@@ -8,10 +8,13 @@ import Branch from '../../components/Branch/Branch'
 const MainPage = () => {
   return (
     <div className={styles.home}>
-      <Navbar/>
-      <Banner/>
-      <About/>
-      <Branch/>
+      <Navbar />
+      <Banner />
+      <About />
+      <Branch />
+      <div className={styles.eventContainer}>
+        <button className={styles.eventBtn}>Events</button>
+      </div>
     </div>
   )
 }
