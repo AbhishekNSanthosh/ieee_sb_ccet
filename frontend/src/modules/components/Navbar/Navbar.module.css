@@ -32,7 +32,7 @@
 .navbarResContainer {
     padding: 0px 5px;
     position: fixed;
-    height: auto;
+    height: 100%;
     width: 97vw;
     top: 0;
     left: 0;
@@ -118,7 +118,7 @@
 
 @media (max-width: 768px) {
     .navbarLogo {
-        height: 4rem;
+        height: 3rem;
     }
 }
 
