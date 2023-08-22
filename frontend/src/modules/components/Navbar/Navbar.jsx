@@ -1,20 +1,32 @@
 import styles from './Navbar.module.css'
-import React, { lazy } from 'react'
+import React, { lazy, useState } from 'react'
 import logoBlue from '../../../assets/IEEE_SB.svg'
 import { navData } from '../../../services/ieeeData'
 import { Link } from 'react-scroll';
+import { FcMenu } from 'react-icons/fc'
+import { AiOutlineClose } from 'react-icons/ai'
 const Navbar = () => {
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
-    <div className={styles.navbarContainer}>
-      <div className={styles.navWrapper}>
+    <div className={!openDrawer ? styles.navbarContainer : styles.navbarResContainer}>
+      <div className={!openDrawer ? styles.navWrapper : styles.navResWrapper}>
         <div className={styles.navbarLeftCol}>
+          {!openDrawer ?
+            <FcMenu size={40} className={styles.toggleIcon} onClick={() => {
+              setOpenDrawer(!openDrawer);
+            }} />
+            :
+            <AiOutlineClose size={35} className={styles.toggleIcon} onClick={() => {
+              setOpenDrawer(!openDrawer);
+            }} />
+          }
           <div className={styles.navbarLeftColItemDiv}>
             <img src={logoBlue} alt="" className={styles.navbarLogo} />
           </div>
         </div>
-        <div className={styles.navbarRightCol}>
+        <div className={!openDrawer ? styles.navbarRightCol : styles.navbarResRightCol}>
           {navData && navData.map((data, index) => (
-            <div className={styles.navbarRightColItemDiv}>
+            <div key={index} className={!openDrawer ? styles.navbarRightColItemDiv : styles.navbarResRightColItemDiv}>
               {data && data.anyLink ?
                 <a
                   href={`#${data?.link}`}
