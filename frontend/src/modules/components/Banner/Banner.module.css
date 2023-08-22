@@ -1,20 +1,42 @@
 .bannerContainer {
     display: flex;
     height: 98vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .bannerContainer {
+        height: 30vh;
+        display: flex;
+    }
 }
 
 .bannerImg {
-  display: flex;
+    display: flex;
 }
 
 .txtTop {
     font-size: 32px;
 }
 
+@media (max-width: 768px) {
+    .txtTop {
+        font-size: 18px;
+    }
+}
+
 .clgTxt {
     font-size: 35px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .clgTxt {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 }
 
 .clgNameBox {
@@ -32,21 +54,36 @@
     justify-content: center;
     gap: 20px;
     flex-direction: column;
-    background-color:rgba(3, 3, 24, 0.315);
+    background-color: rgba(3, 3, 24, 0.315);
     color: #fff;
     backdrop-filter: blur(1px);
 }
 
-.right {
-    flex: 9;
-    display: flex;
+@media (max-width: 768px) {
+    .left {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        background-color: rgba(3, 3, 24, 0.315);
+        color: #fff;
+        backdrop-filter: blur(1px);
+    }
 }
 
 .ieeeLogo {
     height: 3rem;
     margin-right: 30px;
 }
-
 .carmelLogo {
     height: 5rem;
+}
+
+@media (max-width: 768px) {
+    .ieeeLogo {
+        height: 1.5rem;
+        margin-right: 30px;
+    }
 }

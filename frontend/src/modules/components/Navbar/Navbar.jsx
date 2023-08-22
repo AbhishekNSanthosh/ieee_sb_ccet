@@ -31,12 +31,16 @@ const Navbar = () => {
                 <a
                   href={`#${data?.link}`}
                 >
-                  <h1 className={styles.navbarRightItem}>
+                  <h1 className={styles.navbarRightItem} onClick={() => {
+                    setOpenDrawer(false)
+                  }}>
                     {data?.item}
                   </h1>
                 </a>
                 :
-                <h1 className={styles.navbarRightItem}>
+                <h1 className={styles.navbarRightItem} onClick={() => {
+                  setOpenDrawer(false)
+                }}>
                   {data?.item}
                 </h1>
               }
