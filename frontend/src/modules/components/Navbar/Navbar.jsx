@@ -12,11 +12,11 @@ const Navbar = () => {
       <div className={!openDrawer ? styles.navWrapper : styles.navResWrapper}>
         <div className={styles.navbarLeftCol}>
           {!openDrawer ?
-            <FcMenu size={40} className={styles.toggleIcon} onClick={() => {
+            <FcMenu size={30} className={styles.toggleIcon} onClick={() => {
               setOpenDrawer(!openDrawer);
             }} />
             :
-            <AiOutlineClose size={35} className={styles.toggleIcon} onClick={() => {
+            <AiOutlineClose size={30} className={styles.toggleIcon} onClick={() => {
               setOpenDrawer(!openDrawer);
             }} />
           }
