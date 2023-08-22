@@ -15,14 +15,6 @@ const About = () => {
         visible: { opacity: 1, x: 0 },
     };
     return (
-        <motion.div
-            ref={ref}
-            className="animated-component"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={animationVariants}
-            transition={{ duration: 0.5 }}
-        >
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutRow}>
                     <span className={styles.aboutTitle}>About us</span>
@@ -34,11 +26,10 @@ const About = () => {
                         </span>
                     </div>
                     <div className={styles.aboutRowColRight}>
-                        <img src={carmelLogo} alt="" className="" />
+                        <img src={carmelLogo} alt="" className={styles.carmelLogo} />
                     </div>
                 </div>
             </div>
-        </motion.div>
     )
 }
 

@@ -5,14 +5,37 @@
     flex-direction: column;
 }
 
+@media (max-width: 768px) {
+    .aboutContainer {
+        margin-top: 20px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .aboutTitle {
     text-transform: capitalize;
     font-size: 25px;
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+    .aboutTitle {
+        font-size: 20px;
+    }
+}
+
 .aboutRowBtm {
     display: flex;
+}
+
+@media (max-width: 768px) {
+    .aboutRowBtm {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
 }
 
 .aboutRowColLeft {
@@ -28,9 +51,21 @@
     font-size: 18px;
 }
 
+@media (max-width: 768px) {
+    .aboutData {
+        font-size: 16px;
+    }
+}
+
 .aboutRowColRight {
     flex: 4;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .carmelLogo {
+        height: 10rem;
+    }
 }
