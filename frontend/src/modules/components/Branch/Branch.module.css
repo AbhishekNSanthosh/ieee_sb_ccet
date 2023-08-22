@@ -1,12 +1,32 @@
 .branchContainer {
     margin-top: 30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 50px 80px;
     gap: 30px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .branchContainer {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+        width: 100%;
+    }
 }
 
 .branchCol {
     flex: 6;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardLeft {
@@ -19,6 +39,21 @@
     height: 200px;
     cursor: pointer;
     transition: 0.05s all ease;
+}
+
+@media (max-width: 768px) {
+    .cardLeft {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 1px 1px 2px 1px rgb(213, 210, 255);
+        border-radius: 10px;
+        height: 200px;
+        width: 80%;
+        cursor: pointer;
+        transition: 0.05s all ease;
+    }
 }
 
 .cardLeft:hover {
@@ -38,6 +73,21 @@
     height: 200px;
     cursor: pointer;
     transition: 0.05s all ease;
+}
+
+@media (max-width: 768px) {
+    .cardRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: 1px 1px 2px 1px rgb(213, 210, 255);
+        border-radius: 10px;
+        height: 200px;
+        width: 80%;
+        cursor: pointer;
+        transition: 0.05s all ease;
+    }
 }
 
 .cardRight:hover {
