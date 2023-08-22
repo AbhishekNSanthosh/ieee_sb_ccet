@@ -4,7 +4,7 @@
     justify-content: center;
     height: 8vh;
     position: fixed;
-    width: 100vw;
+    width: 95;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -14,14 +14,14 @@
 
 @media (max-width: 768px) {
     .navbarContainer {
-        padding: 0px 5px;
+        padding: 0px;
         position: fixed;
         height: auto;
-        width: 97vw;
+        width: 95;
         top: 0;
         left: 0;
         background-color: #fff;
-        padding: 10px;
+
         z-index: 1000;
         display: flex;
         align-items: center;
@@ -30,14 +30,13 @@
 
 
 .navbarResContainer {
-    padding: 0px 5px;
     position: fixed;
     height: 100%;
-    width: 97vw;
+    width: 100%;
+    width: 95;
     top: 0;
     left: 0;
     background-color: #fff;
-    padding: 10px;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -118,7 +117,7 @@
 
 @media (max-width: 768px) {
     .navbarLogo {
-        height: 3rem;
+        height: 2.7rem;
     }
 }
 
