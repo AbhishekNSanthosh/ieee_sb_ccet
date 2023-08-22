@@ -11,10 +11,69 @@
     z-index: 1000;
 }
 
-.navWrapper{
+@media (max-width: 768px) {
+    .navbarContainer {
+        padding: 0px 5px;
+        position: fixed;
+        height: auto;
+        width: 97vw;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.navbarResContainer {
+    padding: 0px 5px;
+    position: fixed;
+    height: auto;
+    width: 97vw;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navWrapper {
     padding: 0px 40px;
     display: flex;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navWrapper {
+        padding: 0px 5px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.navResWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 5px;
+    height: 100%;
+}
+
+.toggleIcon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .toggleIcon {
+        display: flex;
+        margin-bottom: 6px;
+        cursor: pointer;
+    }
 }
 
 .navbarLeftCol {
@@ -22,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    width: 100%;
 }
 
 .navbarRightCol {
@@ -33,8 +93,31 @@
     gap: 30px;
 }
 
+@media (max-width: 768px) {
+    .navbarRightCol {
+        display: none;
+    }
+}
+
+.navbarResRightCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    gap: 10px;
+}
+
 .navbarLogo {
     height: 5rem;
+}
+
+@media (max-width: 768px) {
+    .navbarLogo {
+        height: 4rem;
+    }
 }
 
 .navbarRightItem {
@@ -47,6 +130,20 @@
 
 .navbarRightColItemDiv {
     position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarResRightColItemDiv {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: 0px 1px 1px 1px rgb(241, 241, 241);
 }
 
 .navbarRightColItemDiv::after {
