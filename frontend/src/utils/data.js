@@ -1,8 +1,17 @@
 const navLink = [
-    "About us",
-    "execom",
-    "Events",
-    "updates"
+    {
+        name: "About",
+        link: "about"
+    },
+    {
+        name:"execom",
+    },
+    {
+        name:"Events",
+    },
+    {
+        name:"updates",
+    }
 ]
 
 export default navLink
