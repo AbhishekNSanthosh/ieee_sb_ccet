@@ -4,6 +4,7 @@
     height: 14vh;
     background-color: #fff;
     width: 100%;
+    z-index: 9999;
 }
 
 .navbarWrapper {

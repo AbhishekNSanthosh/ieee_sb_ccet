@@ -1,0 +1,38 @@
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 3rem;
+}
+
+.aboutTitle{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.aboutRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.aboutLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 8;
+}
+
+.aboutRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 4;
+}
+
+.aboutTxt{
+    font-size: larger;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
