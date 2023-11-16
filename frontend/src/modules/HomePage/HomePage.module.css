@@ -3,3 +3,75 @@
     display: flex;
     flex-direction: column;
 }
+
+.actions {
+    margin: 4rem 3rem;
+}
+
+.actionRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+}
+
+.actionRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 6;
+}
+
+.actionRow {
+    display: flex;
+    gap: 3%;
+}
+
+.studentsBranch {
+    background-color: #fff;
+    width: 100%;
+    height: 12rem;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.studentsBranch:hover{
+    background-color: green;
+    color: #fff;
+}
+
+.csSociety {
+    background-color: #fff;
+    width: 100%;
+    height: 12rem;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.csSociety:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.txt {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
