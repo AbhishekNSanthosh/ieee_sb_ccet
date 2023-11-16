@@ -1,10 +1,7 @@
 import React from 'react'
 import styles from './Navbar.module.css'
 import blueLogo from '../../assets/ieeeLogo.svg'
-import navLink from '../../utils/data'
-import {
-  Link,
-} from "react-router-dom";
+import { navLink } from '../../utils/data'
 
 const Navbar = () => {
   return (
