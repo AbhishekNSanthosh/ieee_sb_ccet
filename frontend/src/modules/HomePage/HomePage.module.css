@@ -96,11 +96,12 @@
 }
 
 .eventItem {
-    width:30%;
+    width: 30%;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
 }
 
 .eventPic {
@@ -109,6 +110,47 @@
     border-radius: 8px;
 }
 
-.eventName{
+.eventName {
+    font-size: 1.3rem;
+    color: blue;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+
+.eventItemTxtBox {
+    display: flex;
+    padding: 10px 10px 0px 10px;
+    flex-direction: column;
+}
+
+.readmore {
+    color: darkblue;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.readmore:hover{
+    color: red;
+}
+
+.moreEventRow {
+    margin: 4rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreEvents {
+    width: 20rem;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #ffff;
+    font-weight: 500;
+    outline: none;
+    border: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }

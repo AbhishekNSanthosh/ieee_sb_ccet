@@ -35,20 +35,22 @@ const HomePage = () => {
           <span className={styles.eventTitle}>Events So Far...</span>
         </div>
         <div className={styles.eventsBox}>
-          {EventsData.slice(0,3).map((event, index) => (
+          {EventsData.slice(0, 3).map((event, index) => (
             <div className={styles.eventItem}>
               <div className={styles.eventItemBox}>
                 <img src={event.pic} alt="" className={styles.eventPic} />
               </div>
-              <div className={event.eventItemBox}>
+              <div className={styles.eventItemTxtBox}>
                 <span className={styles.eventName}>{event.title}</span>
               </div>
-              <div className={styles.eventItemBox}>
-                <p className={styles.desc}>{event.desc.slice(0,30)}</p>
-                <p className={styles.readmore}>Read More...</p>
+              <div className={styles.eventItemTxtBox}>
+                <p className={styles.desc}>{event.desc.slice(0, 100)}... <p className={styles.readmore}>Read More...</p></p>
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.moreEventRow}>
+          <button className={styles.moreEvents}>View more events from us</button>
         </div>
       </div>
     </div>
