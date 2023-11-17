@@ -5,6 +5,7 @@ import styles from './HomePage.module.css'
 import About from '../../components/About/About'
 import { EventsData } from '../../utils/data'
 import ReachUs from '../../components/ReachUs/ReachUs'
+import Footer from '../../components/Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -56,6 +57,8 @@ const HomePage = () => {
       </div>
 
       <ReachUs/>
+
+      <Footer/>
     </div>
   )
 }

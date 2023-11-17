@@ -1,0 +1,68 @@
+.Footer {
+    display: flex;
+    margin: 2rem 3rem;
+}
+
+.footerWrapper {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.footerRowLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerRow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoImg {
+    height: 5rem;
+}
+
+.footerRowRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.actions {
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    color: 000;
+}
+
+.actions:hover {
+    color: blue;
+}
+
+.footerRowBtm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rights {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.highlight{
+    font-weight: 500;
+    color: blue;
+    cursor: pointer;
+}
