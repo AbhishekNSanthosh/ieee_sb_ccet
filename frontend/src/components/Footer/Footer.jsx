@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.footerRowRight}>
                         {socials.map((item, index) => (
-                            <div className={styles.footerRightItem}>
+                            <div key={index} className={styles.footerRightItem}>
                                 <a href={item.url}>
                                     <img src={item.icon} alt="" className={styles.socials} />
                                 </a>

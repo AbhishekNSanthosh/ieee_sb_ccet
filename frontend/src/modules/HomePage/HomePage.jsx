@@ -10,9 +10,8 @@ import Footer from '../../components/Footer/Footer'
 const HomePage = () => {
   return (
     <div className={styles.homeContainer}>
-      <Navbar />
       <Banner />
-      <section id='about'>
+      <section id='about' name="about">
         <About />
       </section>
       <div className={styles.actions}>
@@ -38,7 +37,7 @@ const HomePage = () => {
         </div>
         <div className={styles.eventsBox}>
           {EventsData.slice(0, 3).map((event, index) => (
-            <div className={styles.eventItem}>
+            <div key={index} className={styles.eventItem}>
               <div className={styles.eventItemBox}>
                 <img src={event.pic} alt="" className={styles.eventPic} />
               </div>

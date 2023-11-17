@@ -4,31 +4,30 @@ import linkedin from '../assets/linkedin.svg'
 import fb from '../assets/fb.svg'
 import aishwarya from '../assets/sb/aishwarya.jpg'
 import ansu from '../assets/sb/ansu.jpg'
-import arun from '../assets/sb/arun.jpg'
-import deepthi from '../assets/sb/deepthi.jpg'
+import arun from '../assets/sb/arun.png'
+import deepthi from '../assets/sb/deepthi.png'
 import surya from '../assets/sb/surya.jpg'
 import varghese from '../assets/sb/varghese.jpg'
 import keerthana from '../assets/sb/keerthana.jpg'
-import abhishek from '../assets/sb/abhishek.jpg'
+import abhishek from '../assets/sb/abhishek.png'
 import abhinav from '../assets/sb/abhinav.jpg'
 import jayasoorya from '../assets/sb/jayasoorya.jpg'
+import vishnu from '../assets/sb/vishnu.jpg'
 
 //cs
-import amala from '../assets/cs/amala.jpg'
+import amala from '../assets/cs/amala.png'
 import ansucs from '../assets/cs/ansucs.jpg'
-import athira from '../assets/cs/athira.jpg'
+import athira from '../assets/cs/athira.png'
 import augustin from '../assets/cs/augustin.jpg'
-import ayana from '../assets/cs/ayana.jpg'
+import ayana from '../assets/cs/ayana.png'
 import raoof from '../assets/cs/raoof.jpg'
 import vaishnavi from '../assets/cs/vaishnavi.jpg'
+import aparna from '../assets/cs/aparna.jpg'
 
 export const navLink = [
     {
-        name: "About",
-        link: "about"
-    },
-    {
         name: "execom",
+        link:'/execom'
     },
     {
         name: "Events",
@@ -87,7 +86,7 @@ export const SBExecom = [
         id: 1,
         name: "vishnu s",
         role: "branch counsellor",
-        img: ""
+        img: vishnu
     },
     {
         id: 2,
@@ -156,7 +155,7 @@ export const CSExecom = [
         id: 1,
         name: "Aparna a s",
         role: "chapter advisor",
-        img: ""
+        img: aparna
     },
     {
         id: 2,

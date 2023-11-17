@@ -17,7 +17,7 @@ const Navbar = () => {
             <div key={index} className={styles.navbarItemRight}>
               {
                 item?.link ?
-                  <a href={`#${item?.link}`}>
+                  <a href={`${item?.link}`}>
                     <span className={styles.navLink}>{item?.name}</span>
                   </a>
                   :
