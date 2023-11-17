@@ -1,0 +1,90 @@
+.reachUsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+
+}
+
+.reachUsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4rem 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.reachUsRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.reachUsTitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: blue;
+}
+
+.reachUsDataRow {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.rowLeft {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    gap: 1rem;
+}
+
+.rowRight {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    gap: 1rem;
+}
+
+.coordinatorTitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: blue;
+}
+
+.coordinator {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.mobile{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.rowItem {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.rowItemRight{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}

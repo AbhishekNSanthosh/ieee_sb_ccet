@@ -4,6 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import styles from './HomePage.module.css'
 import About from '../../components/About/About'
 import { EventsData } from '../../utils/data'
+import ReachUs from '../../components/ReachUs/ReachUs'
 
 const HomePage = () => {
   return (
@@ -53,6 +54,8 @@ const HomePage = () => {
           <button className={styles.moreEvents}>View more events from us</button>
         </div>
       </div>
+
+      <ReachUs/>
     </div>
   )
 }
