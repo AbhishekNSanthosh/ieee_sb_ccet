@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Navbar.module.css'
 import blueLogo from '../../assets/ieeeLogo.svg'
 import { navLink } from '../../utils/data'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,9 @@ const Navbar = () => {
       <div className={styles.navbarWrapper}>
         <div className={styles.navbarLeft}>
           <div className={styles.navbarItem}>
-            <img src={blueLogo} alt="" className={styles.logo} />
+            <Link to={ '/'}>
+              <img src={blueLogo} alt="" className={styles.logo} />
+            </Link>
           </div>
         </div>
         <div className={styles.navbarRight}>
@@ -21,7 +24,7 @@ const Navbar = () => {
                     <span className={styles.navLink}>{item?.name}</span>
                   </a>
                   :
-                    <span className={styles.navLink}>{item?.name}</span>
+                  <span className={styles.navLink}>{item?.name}</span>
               }
             </div>
           ))}
