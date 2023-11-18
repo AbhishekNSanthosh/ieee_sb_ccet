@@ -5,7 +5,7 @@ import banner1 from '../../assets/banner.png'
 const Banner = () => {
   return (
     <div className={styles.bannerContainer}>
-      <img src={banner1} alt="" className={styles.bannerImg} />
+      <img src={banner1} alt="" className={styles.bannerImg} loading='lazy'/>
       <div className={styles.BannerTxtBox}>
         <div className={styles.row}>
           <span className={styles.ieee}>IEEE Students Branch</span>

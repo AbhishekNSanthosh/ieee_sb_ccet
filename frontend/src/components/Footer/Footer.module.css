@@ -1,6 +1,7 @@
 .Footer {
     display: flex;
     margin: 2rem 3rem;
+    background-color: #fff;
 }
 
 .footerWrapper {

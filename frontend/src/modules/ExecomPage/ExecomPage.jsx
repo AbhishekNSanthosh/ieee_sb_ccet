@@ -6,6 +6,7 @@ import { CSExecom, SBExecom } from '../../utils/data'
 
 const ExecomPage = () => {
   return (
+    <>
     <div className={styles.execomContainer}>
       <div className={styles.wrapper}>
         <div className={styles.wrap}>
@@ -28,6 +29,7 @@ const ExecomPage = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

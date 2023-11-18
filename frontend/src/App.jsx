@@ -8,6 +8,8 @@ import {
 import HomePage from './modules/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import ExecomPage from './modules/ExecomPage/ExecomPage';
+import Footer from './components/Footer/Footer';
+import EventsPage from './modules/EventsPage/EventsPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +18,8 @@ function App() {
       element: <>
         <Navbar />
         <HomePage />
+      <Footer/>
+
       </>
     },
     {
@@ -23,6 +27,15 @@ function App() {
       element: <>
         <Navbar />
         <ExecomPage />
+        <Footer/>
+      </>
+    },
+    {
+      path: "/events",
+      element: <>
+        <Navbar />
+        <EventsPage />
+        <Footer/>
       </>
     },
   ]);

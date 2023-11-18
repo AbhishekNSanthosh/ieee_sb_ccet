@@ -41,7 +41,6 @@
 }
 
 .memberImg {
-    /* border: 1px solid #183883; */
     border-radius: 8px;
     height: 300px;
     object-fit: cover;

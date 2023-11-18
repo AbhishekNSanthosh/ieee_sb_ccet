@@ -7,7 +7,7 @@ const MemberList = ({ members }) => {
             {members.map((member, index) => (
                 <div className={styles.item}>
                     <div className={styles.row}>
-                        <img src={member?.img} alt="" className={styles.memberImg} />
+                        <img src={member?.img} alt="" className={styles.memberImg} loading='lazy'/>
                     </div>
                     <div className={styles.row}>
                         <span className={styles.name}>{member?.name}</span>

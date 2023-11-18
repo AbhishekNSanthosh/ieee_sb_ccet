@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './ReachUs.module.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const ReachUs = () => {
+    useEffect(() => {
+        Aos.init({ duration: 800 });
+      }, [])
     return (
-        <div className={styles.reachUsContainer}>
+        <div className={styles.reachUsContainer} data-aos="fade-down">
             <div className={styles.reachUsWrapper}>
                 <div className={styles.reachUsRow}>
                     <span className={styles.reachUsTitle}>Reach Us</span>
                 </div>
                 <div className={styles.reachUsRow}>
                     <div className={styles.reachUsDataRow}>
-                        <div className={styles.rowLeft}>
+                        <div className={styles.rowLeft} >
                             <div className={styles.rowItem}>
                                 <span className={styles.coordinatorTitle}>Faculty Coordinators:</span>
                             </div>

@@ -31,6 +31,7 @@ export const navLink = [
     },
     {
         name: "Events",
+        link:'/events'
     },
     {
         name: "updates",
