@@ -8,17 +8,46 @@
     margin: 4rem 3rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .actions {
+        margin: 2rem 1rem;
+    }
+}
+
+
 .actionRow {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    gap: 3%;
 }
+
+@media only screen and (max-width: 767px) {
+    .actionRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
 
 .actionLeft {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 6;
+}
+
+@media only screen and (max-width: 767px) {
+    .actionLeft {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+    }
 }
 
 .actionRight {
@@ -28,10 +57,15 @@
     flex: 6;
 }
 
-.actionRow {
-    display: flex;
-    gap: 3%;
+@media only screen and (max-width: 767px) {
+    .actionRight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+    }
 }
+
 
 .studentsBranch {
     background-color: #fff;
@@ -44,13 +78,14 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .studentsBranch:hover {
     background-color: green;
     color: #fff;
 }
+
 
 .csSociety {
     background-color: #fff;
@@ -63,7 +98,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .csSociety:hover {
@@ -76,10 +111,25 @@
     font-size: 1.4rem;
 }
 
+@media only screen and (max-width: 767px) {
+    .txt {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+}
+
 .eventsContainer {
     display: flex;
     flex-direction: column;
     margin: 4rem 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .eventsContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
 }
 
 .eventTitle {
@@ -96,6 +146,17 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 767px) {
+    .eventsBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.7rem;
+        justify-content: center;
+    }
+}
+
 .eventItem {
     width: 30%;
     padding: 5px;
@@ -103,6 +164,17 @@
     flex-direction: column;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .eventItem {
+        width: 98%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
 }
 
 .eventPic {

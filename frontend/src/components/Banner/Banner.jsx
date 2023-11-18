@@ -8,10 +8,12 @@ const Banner = () => {
       <img src={banner1} alt="" className={styles.bannerImg} loading='lazy'/>
       <div className={styles.BannerTxtBox}>
         <div className={styles.row}>
-          <span className={styles.ieee}>IEEE Students Branch</span>
+          <span className={styles.ieee}>IEEE</span>
+          <span className={styles.ieee}>Students Branch</span>
         </div>
         <div className={styles.row}>
           <span className={styles.collegeName}>Carmel College of Engineering & Technology</span>
+          <span className={styles.collegeNameCCET}>CCET</span>
         </div>
       </div>
     </div>

@@ -8,12 +8,12 @@ const ReachUs = () => {
         Aos.init({ duration: 800 });
       }, [])
     return (
-        <div className={styles.reachUsContainer} data-aos="fade-down">
+        <div className={styles.reachUsContainer}>
             <div className={styles.reachUsWrapper}>
-                <div className={styles.reachUsRow}>
+                <div className={styles.reachUsRow} data-aos="fade-down">
                     <span className={styles.reachUsTitle}>Reach Us</span>
                 </div>
-                <div className={styles.reachUsRow}>
+                <div className={styles.reachUsRow} data-aos="fade-down">
                     <div className={styles.reachUsDataRow}>
                         <div className={styles.rowLeft} >
                             <div className={styles.rowItem}>

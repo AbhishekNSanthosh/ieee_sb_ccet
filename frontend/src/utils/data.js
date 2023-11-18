@@ -69,15 +69,15 @@ export const EventsData = [
 export const socials = [
     {
         icon: insta,
-        url: "https://www.instagram.com/csi_cce/"
+        url: "https://www.instagram.com/ieee_ccet/"
     },
     {
         icon: linkedin,
-        url: "https://www.instagram.com/csi_cce/"
+        url: "https://www.instagram.com/ieee_ccet/"
     },
     {
         icon: fb,
-        url: "https://www.instagram.com/csi_cce/"
+        url: "https://www.instagram.com/ieee_ccet/"
     },
 
 ]

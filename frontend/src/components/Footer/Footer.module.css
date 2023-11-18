@@ -1,17 +1,36 @@
 .Footer {
     display: flex;
-    margin: 2rem 3rem;
+    border-top: 1px solid rgb(233, 233, 233);
     background-color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .Footer {
+        display: flex;
+        background-color: #fff;
+    }
 }
 
 .footerWrapper {
     width: 100%;
+    margin: 2rem 3rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
 }
 
-.footerRowLeft{
+@media only screen and (max-width: 767px) {
+    .footerWrapper {
+        width: 100%;
+        margin: 1rem 1rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+
+
+.footerRowLeft {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -24,8 +43,25 @@
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 767px) {
+    .footerRow {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .logoImg {
     height: 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .logoImg {
+        height: 4rem;
+    }
 }
 
 .footerRowRight {
@@ -40,6 +76,15 @@
     font-size: 1rem;
     cursor: pointer;
     color: 000;
+}
+
+@media only screen and (max-width: 767px) {
+    .actions {
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        color: 000;
+    }
 }
 
 .actions:hover {
@@ -62,8 +107,25 @@
     font-weight: normal;
 }
 
-.highlight{
+@media only screen and (max-width: 767px) {
+    .rights {
+        font-size: 0.56rem;
+        letter-spacing: 0.2px;
+        font-weight: normal;
+    }
+}
+
+.highlight {
     font-weight: 500;
     color: blue;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .socials {
+        font-weight: 500;
+        height: 1.4rem;
+        cursor: pointer;
+        color: #fff;
+    }
 }

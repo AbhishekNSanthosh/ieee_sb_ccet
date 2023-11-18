@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #d3d3d3;
+    background-color: #f0f0f0;
 }
 
 .reachUsWrapper {
@@ -36,6 +36,17 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+    .reachUsDataRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+}
+
 .rowLeft {
     display: flex;
     flex: 6;
@@ -44,6 +55,18 @@
     justify-content: end;
     width: 100%;
     gap: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .rowLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
 }
 
 .rowRight {
@@ -62,9 +85,24 @@
     color: blue;
 }
 
+@media only screen and (max-width: 767px) {
+    .coordinatorTitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: blue;
+    }
+}
+
 .coordinator {
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+    .coordinator {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }   
 }
 
 .mobile{
@@ -80,10 +118,30 @@
     justify-content: end;
 }
 
+@media only screen and (max-width: 767px) {
+    .rowItem {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .rowItemRight{
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: start;
     justify-content: end;
+}
+
+@media only screen and (max-width: 767px) {
+    .rowItemRight{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
