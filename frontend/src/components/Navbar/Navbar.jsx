@@ -69,7 +69,6 @@ const Navbar = () => {
                         color: 'red'
                       },
                       duration: 2000,
-                      position:'bottom-center'
                     })
                   } else {
                     navigate(item?.link);
