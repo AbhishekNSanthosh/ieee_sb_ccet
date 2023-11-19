@@ -150,7 +150,7 @@
     .eventsBox {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
         grid-template-columns: repeat(3, 1fr);
         gap: 2.7rem;
         justify-content: center;
@@ -172,7 +172,7 @@
         padding: 5px;
         display: flex;
         flex-direction: column;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        box-shadow: rgba(194, 194, 194, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
     }
 }

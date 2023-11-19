@@ -35,6 +35,11 @@ export const navLink = [
     },
     {
         name: "updates",
+        link:"/"
+    },
+    {
+        name: "Connect us",
+        link:'/'
     }
 ]
 

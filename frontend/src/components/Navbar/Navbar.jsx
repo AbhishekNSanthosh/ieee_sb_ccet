@@ -1,36 +1,103 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 import blueLogo from '../../assets/ieeeLogo.svg'
+import ieeelogo from '../../assets/ieeeBlue.svg'
 import { navLink } from '../../utils/data'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { BsJustify, BsChevronDoubleUp, BsChevronRight } from "react-icons/bs";
+import cslogo from '../../assets/cslogo.png'
+import { toast } from 'react-hot-toast';
+
 
 const Navbar = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const navigate = useNavigate()
   return (
-    <div className={styles.navbarContainer}>
-      <div className={styles.navbarWrapper}>
-        <div className={styles.navbarLeft}>
-          <div className={styles.navbarItem}>
-            <Link to={ '/'}>
-              <img src={blueLogo} alt="" className={styles.logo} />
-            </Link>
-          </div>
-        </div>
-        <div className={styles.navbarRight}>
-          {navLink.map((item, index) => (
-            <div key={index} className={styles.navbarItemRight}>
+    <>
+      <div className={styles.navbarContainer}>
+        <div className={styles.navbarWrapper}>
+          <div className={styles.navbarLeft}>
+            <div className={styles.navbarItem}>
+              <Link to={'/'}>
+                <img src={blueLogo} alt="" className={styles.logo} loading='lazy' />
+              </Link>
+            </div>
+            <div className={styles.navbarItem}>
               {
-                item?.link ?
-                  <a href={`${item?.link}`}>
-                    <span className={styles.navLink}>{item?.name}</span>
-                  </a>
+                !isDrawerOpen ?
+                  <BsJustify className={styles.icon} onClick={() => {
+                    setIsDrawerOpen(true)
+                  }} />
                   :
-                  <span className={styles.navLink}>{item?.name}</span>
+                  <BsChevronDoubleUp className={styles.icon} onClick={() => {
+                    setIsDrawerOpen(false)
+                  }} />
               }
             </div>
-          ))}
+          </div>
+          <div className={styles.navbarRight}>
+            {navLink.map((item, index) => (
+              <div key={index} className={styles.navbarItemRight} onClick={() => {
+                if (item?.link === '/') {
+                  toast('Comming Soon !!!', {
+                    style: {
+                      color: 'red'
+                    },
+                    duration: 2000
+                  })
+                } else {
+                  navigate(item?.link);
+                  setTimeout(() => {
+                    setIsDrawerOpen(false)
+                  }, 300)
+
+                }
+              }}>
+                <span className={styles.navLink}>{item?.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
+        {isDrawerOpen &&
+          <div className={styles.drawer}>
+            <div className={styles.drawerList}>
+              {navLink.map((item, index) => (
+                <div key={index} className={styles.drawerListItem} onClick={() => {
+                  if (item?.link === '/') {
+                    toast('Comming Soon !!!', {
+                      style: {
+                        color: 'red'
+                      },
+                      duration: 2000,
+                      position:'bottom-center'
+                    })
+                  } else {
+                    navigate(item?.link);
+                    setTimeout(() => {
+                      setIsDrawerOpen(false)
+                    }, 300)
+
+                  }
+                }}>
+                  <span className={styles.navLink}>{item?.name}</span>
+                  <BsChevronRight className={styles.icon} />
+                </div>
+              ))}
+            </div>
+            <div className={styles.drawerBtm}>
+              <div className={styles.drawerCreditsRow}>
+                <img src={ieeelogo} alt="" className={styles.logobtm} loading='lazy' />
+                <img src={cslogo} alt="" className={styles.logobtm} loading='lazy' />
+              </div>
+              <div className={styles.drawerCredits}>
+                <span className={styles.rights}>Copyright © IEEE SB CCET 2023. All Rights Reserved.</span>
+                <span className={styles.rights}>Designed and developed by <span className={styles.highlight}>Abhishek Santhosh</span> and <span className={styles.highlight}>Aswin S Sheshadri</span>.</span>
+              </div>
+            </div>
+          </div>
+        }
       </div>
-    </div>
+    </>
   )
 }
 

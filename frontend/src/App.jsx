@@ -2,14 +2,13 @@ import './App.css'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import HomePage from './modules/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import ExecomPage from './modules/ExecomPage/ExecomPage';
 import Footer from './components/Footer/Footer';
 import EventsPage from './modules/EventsPage/EventsPage';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,8 +17,8 @@ function App() {
       element: <>
         <Navbar />
         <HomePage />
-      <Footer/>
-
+        <Footer />
+        <Toaster />
       </>
     },
     {
@@ -27,7 +26,7 @@ function App() {
       element: <>
         <Navbar />
         <ExecomPage />
-        <Footer/>
+        <Footer />
       </>
     },
     {
@@ -35,7 +34,7 @@ function App() {
       element: <>
         <Navbar />
         <EventsPage />
-        <Footer/>
+        <Footer />
       </>
     },
   ]);

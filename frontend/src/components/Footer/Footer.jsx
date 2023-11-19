@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={styles.footerRow}>
                     <div className={styles.footerRowLeft}>
                         <div className={styles.footerRowRight}>
-                            <img src={logo} alt="" className={styles.logoImg} />
+                            <img src={logo} alt="" className={styles.logoImg} loading='lazy'/>
                         </div>
                         <div className={styles.footerRowRight}>
                             <span className={styles.actions}>Privacy policy</span>
@@ -22,7 +22,7 @@ const Footer = () => {
                         {socials.map((item, index) => (
                             <div key={index} className={styles.footerRightItem}>
                                 <a href={item.url}>
-                                    <img src={item.icon} alt="" className={styles.socials} />
+                                    <img src={item.icon} alt="" className={styles.socials} loading='lazy'/>
                                 </a>
                             </div>
                         ))}
