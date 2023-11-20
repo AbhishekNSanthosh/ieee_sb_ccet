@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { BsJustify, BsChevronDoubleUp, BsChevronRight } from "react-icons/bs";
 import cslogo from '../../assets/cslogo.png'
 import { toast } from 'react-hot-toast';
-
+import { MdAddAlert } from "react-icons/md";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);

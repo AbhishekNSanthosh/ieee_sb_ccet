@@ -24,6 +24,8 @@ import raoof from '../assets/cs/raoof.jpg'
 import vaishnavi from '../assets/cs/vaishnavi.jpg'
 import aparna from '../assets/cs/aparna.jpg'
 
+
+
 export const navLink = [
     {
         name: "execom",
@@ -33,10 +35,10 @@ export const navLink = [
         name: "Events",
         link:'/events'
     },
-    {
-        name: "updates",
-        link:"/"
-    },
+    // {
+    //     name: "updates",
+    //     link:"/"
+    // },
     {
         name: "Connect us",
         link:'/'
