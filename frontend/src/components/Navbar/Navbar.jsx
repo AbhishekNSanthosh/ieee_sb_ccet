@@ -23,6 +23,14 @@ const Navbar = () => {
               </Link>
             </div>
             <div className={styles.navbarItem}>
+              <MdAddAlert className={styles.notifyMob} onClick={() => {
+                toast('Comming Soon !!!', {
+                  style: {
+                    color: 'red'
+                  },
+                  duration: 2000
+                })
+              }} />
               {
                 !isDrawerOpen ?
                   <BsJustify className={styles.icon} onClick={() => {
@@ -56,6 +64,14 @@ const Navbar = () => {
                 <span className={styles.navLink}>{item?.name}</span>
               </div>
             ))}
+            <MdAddAlert className={styles.notify} onClick={() => {
+              toast('Comming Soon !!!', {
+                style: {
+                  color: 'red'
+                },
+                duration: 2000
+              })
+            }} />
           </div>
         </div>
         {isDrawerOpen &&
