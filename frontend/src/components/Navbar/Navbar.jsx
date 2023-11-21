@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 import blueLogo from '../../assets/ieeeLogo.svg'
 import ieeelogo from '../../assets/ieeeBlue.svg'
@@ -12,24 +12,9 @@ import Notification from '../Notification/Notification'
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [showNotification, setShowNotification] = useState(true);
+  const [showNotification, setShowNotification] = useState(false);
   const navigate = useNavigate()
 
-  const notificationRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (notificationRef.current && !notificationRef.current.contains(event.target)) {
-        setShowNotification(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
   return (
     <>
       <div className={styles.navbarContainer}>
@@ -78,6 +63,7 @@ const Navbar = () => {
               </div>
             ))}
             <MdAddAlert className={styles.notify} onClick={() => {
+              console.log(showNotification)
               setShowNotification(!showNotification)
             }} />
           </div>
@@ -119,7 +105,7 @@ const Navbar = () => {
             </div>
           </div>
         }
-        {showNotification && <Notification ref={notificationRef}/>}
+        {showNotification && <Notification />}
       </div>
     </>
   )
