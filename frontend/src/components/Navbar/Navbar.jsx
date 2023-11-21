@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './Navbar.module.css'
 import blueLogo from '../../assets/ieeeLogo.svg'
 import ieeelogo from '../../assets/ieeeBlue.svg'
@@ -14,6 +14,22 @@ const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [showNotification, setShowNotification] = useState(true);
   const navigate = useNavigate()
+
+  const notificationRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (notificationRef.current && !notificationRef.current.contains(event.target)) {
+        setShowNotification(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
     <>
       <div className={styles.navbarContainer}>
@@ -103,7 +119,7 @@ const Navbar = () => {
             </div>
           </div>
         }
-        {showNotification && <Notification />}
+        {showNotification && <Notification ref={notificationRef}/>}
       </div>
     </>
   )
