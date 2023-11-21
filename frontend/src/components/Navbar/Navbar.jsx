@@ -27,12 +27,6 @@ const Navbar = () => {
             <div className={styles.navbarItem}>
               <MdAddAlert className={styles.notifyMob} onClick={() => {
                 setShowNotification(!showNotification)
-                toast('Comming Soon !!!', {
-                  style: {
-                    color: 'red'
-                  },
-                  duration: 2000
-                })
               }} />
               {
                 !isDrawerOpen ?
@@ -69,12 +63,6 @@ const Navbar = () => {
             ))}
             <MdAddAlert className={styles.notify} onClick={() => {
               setShowNotification(!showNotification)
-              toast('Comming Soon !!!', {
-                style: {
-                  color: 'red'
-                },
-                duration: 2000
-              })
             }} />
           </div>
         </div>
