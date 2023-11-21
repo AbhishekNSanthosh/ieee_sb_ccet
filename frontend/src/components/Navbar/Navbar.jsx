@@ -8,9 +8,11 @@ import { BsJustify, BsChevronDoubleUp, BsChevronRight } from "react-icons/bs";
 import cslogo from '../../assets/cslogo.png'
 import { toast } from 'react-hot-toast';
 import { MdAddAlert } from "react-icons/md";
+import Notification from '../Notification/Notification'
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [showNotification, setShowNotification] = useState(true);
   const navigate = useNavigate()
   return (
     <>
@@ -24,6 +26,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarItem}>
               <MdAddAlert className={styles.notifyMob} onClick={() => {
+                setShowNotification(!showNotification)
                 toast('Comming Soon !!!', {
                   style: {
                     color: 'red'
@@ -65,6 +68,7 @@ const Navbar = () => {
               </div>
             ))}
             <MdAddAlert className={styles.notify} onClick={() => {
+              setShowNotification(!showNotification)
               toast('Comming Soon !!!', {
                 style: {
                   color: 'red'
@@ -111,6 +115,7 @@ const Navbar = () => {
             </div>
           </div>
         }
+        {showNotification && <Notification />}
       </div>
     </>
   )
