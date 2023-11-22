@@ -6,12 +6,13 @@
     z-index: 9999;
     right:3rem;
     top: 5.2rem;
-    width: 300px;
+    width:23rem;
     object-fit: contain;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 70vh;
     align-items: start;
 }
 
@@ -25,6 +26,7 @@
         right:0.1rem;
         top: 4.3rem;
         width: 90%;
+        height: 100vh;
         object-fit: contain;
         padding: 20px;
         display: flex;
