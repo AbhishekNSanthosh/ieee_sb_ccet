@@ -5,7 +5,7 @@ const MemberList = ({ members }) => {
     return (
         <div className={styles.container}>
             {members.map((member, index) => (
-                <div className={styles.item}>
+                <div key={index} className={styles.item}>
                     <div className={styles.row}>
                         <img src={member?.img} alt="" className={styles.memberImg} loading='lazy'/>
                     </div>
