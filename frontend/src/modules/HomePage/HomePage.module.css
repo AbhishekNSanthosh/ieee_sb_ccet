@@ -78,7 +78,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(197, 197, 197, 0.2) 0px 7px 29px 0px;
 }
 
 .studentsBranch:hover {
@@ -98,7 +98,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(197, 197, 197, 0.2) 0px 7px 29px 0px;
 }
 
 .csSociety:hover {
@@ -161,9 +161,16 @@
     width: 30%;
     padding: 5px;
     display: flex;
+    transition: transform 0.2s ease-in-out;
     flex-direction: column;
+    cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+}
+
+.eventItem:hover {
+    /* Move the image 5 pixels upwards */
+    transform: translateY(-6px);
 }
 
 @media only screen and (max-width: 767px) {
@@ -204,7 +211,7 @@
     margin-bottom: 10px;
 }
 
-.readmore:hover{
+.readmore:hover {
     color: red;
 }
 
@@ -228,6 +235,6 @@
     cursor: pointer;
 }
 
-.moreEvents:hover{
+.moreEvents:hover {
     background-color: red;
 }
