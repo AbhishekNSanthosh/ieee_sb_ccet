@@ -47,9 +47,9 @@ const Navbar = () => {
                     }} />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent width="90%"  top={3}>
+                <PopoverContent width="99%" marginRight={5}  top={3}>
                   <PopoverArrow />
-                  <PopoverCloseButton />
+                  <PopoverCloseButton mt={2} color="blue"/>
                   <PopoverHeader fontSize={20} fontWeight={600}>Notification </PopoverHeader>
                   <PopoverBody width="21rem" height="60vh" display="flex" alignItems="center" justifyContent="center">
                     <div className={styles.notifyrow}>
