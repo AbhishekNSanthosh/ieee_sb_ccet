@@ -141,7 +141,7 @@
     display: flex;
     margin-top: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.7rem;
+    gap: 3.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }

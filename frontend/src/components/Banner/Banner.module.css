@@ -3,12 +3,14 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
 }
 
 @media only screen and (max-width: 767px) {
     .bannerContainer {
         margin-top: 6.4vh;
+        position: relative;
         height: 90vh;
         width: 100%;
         display: flex;
@@ -33,13 +35,13 @@
 
 .BannerTxtBox {
     position: absolute;
-    bottom: -50px;
+    bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    left: 35%;
-    width: 60%;
+    left: 40%;
+    width: 70%;
     transform: translateX(-50%);
     background-color: rgba(15, 0, 51, 0.096);
     padding: 20px;
@@ -120,12 +122,12 @@
     }
 }
 
-.collegeNameCCET{
+.collegeNameCCET {
     display: none;
 }
 
 @media only screen and (max-width: 767px) {
-    .collegeNameCCET{
+    .collegeNameCCET {
         font-size: 0.8rem;
         letter-spacing: 0.5rem;
         font-weight: 600;

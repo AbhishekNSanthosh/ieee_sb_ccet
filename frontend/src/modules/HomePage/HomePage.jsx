@@ -9,12 +9,16 @@ import Footer from '../../components/Footer/Footer'
 import EventList from '../../components/EventsList/EventList'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import { useNavigate } from 'react-router-dom'
+import { animateScroll } from 'react-scroll';
 
 const HomePage = () => {
   useEffect(() => {
     Aos.init({ duration: 800 });
+    animateScroll.scrollToTop();
   }, [])
 
+  const navigate = useNavigate();
   return (
     <div className={styles.homeContainer}>
       <Banner />
@@ -42,9 +46,11 @@ const HomePage = () => {
         <div className={styles.eventsRow}>
           <span className={styles.eventTitle}>Events So Far...</span>
         </div>
-        <EventList EventsData={EventsData.slice(0, 3)}/>
+        <EventList EventsData={EventsData.slice(0, 3)} />
         <div className={styles.moreEventRow}>
-          <button className={styles.moreEvents}>View more events from us</button>
+          <button className={styles.moreEvents} onClick={() => {
+            navigate('/events')
+          }}>View more events from us</button>
         </div>
       </div>
 

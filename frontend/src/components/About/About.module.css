@@ -9,7 +9,7 @@
     .AboutContainer{
         display: flex;
         flex-direction: column;
-        margin: 2rem 2rem;
+        margin: 0rem 1.1rem;
         margin-top: 6rem;
     }
 }
