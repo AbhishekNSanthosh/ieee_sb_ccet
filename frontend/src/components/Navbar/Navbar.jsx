@@ -9,6 +9,18 @@ import cslogo from '../../assets/cslogo.png'
 import { toast } from 'react-hot-toast';
 import { MdAddAlert } from "react-icons/md";
 import Notification from '../Notification/Notification'
+import nothing from '../../assets/nothing.svg'
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor, Button, ButtonGroup
+} from '@chakra-ui/react'
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -26,9 +38,29 @@ const Navbar = () => {
               </Link>
             </div>
             <div className={styles.navbarItem}>
-              <MdAddAlert className={styles.notifyMob} onClick={() => {
-                setShowNotification(!showNotification)
-              }} />
+              <Popover>
+                <PopoverTrigger>
+                  <Button variant={"link"} colorScheme='white' mr={4}>
+                    <MdAddAlert className={styles.notify} onClick={() => {
+                      console.log(showNotification)
+                      setShowNotification(!showNotification)
+                    }} />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent width="90%" mr="10" top={3}>
+                  <PopoverArrow />
+                  <PopoverCloseButton />
+                  <PopoverHeader fontSize={20} fontWeight={600}>Notification </PopoverHeader>
+                  <PopoverBody width="21rem" height="60vh" display="flex" alignItems="center" justifyContent="center">
+                    <div className={styles.notifyrow}>
+                      <img src={nothing} alt="" className={styles.nothingImg} />
+                      <span className={styles.notifyEmpty}>
+                        No notifications right now !!!
+                      </span>
+                    </div>
+                  </PopoverBody>
+                </PopoverContent>
+              </Popover>
               {
                 !isDrawerOpen ?
                   <BsJustify className={styles.icon} onClick={() => {
@@ -62,10 +94,34 @@ const Navbar = () => {
                 <span className={styles.navLink}>{item?.name}</span>
               </div>
             ))}
-            <MdAddAlert className={styles.notify} onClick={() => {
-              console.log(showNotification)
-              setShowNotification(!showNotification)
-            }} />
+            <Popover>
+              <PopoverTrigger>
+                <Button variant={"link"} colorScheme='white'>
+                  <MdAddAlert className={styles.notify} onClick={() => {
+                    console.log(showNotification)
+                    setShowNotification(!showNotification)
+                  }} />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent
+                width="90%" mr="10"
+                top={3}
+                boxShadow='rgba(17, 12, 46, 0.15) 0px 48px 100px 0px'
+                display='flex'
+              >
+                <PopoverArrow />
+                <PopoverCloseButton marginTop={2} color="blue" />
+                <PopoverHeader fontSize={20} fontWeight={600}>Notification </PopoverHeader>
+                <PopoverBody width="23rem" height="60vh" display="flex" alignItems="center" justifyContent="center">
+                  <div className={styles.notifyrow}>
+                    <img src={nothing} alt="" className={styles.nothingImg} />
+                    <span className={styles.notifyEmpty}>
+                      No notifications right now !!!
+                    </span>
+                  </div>
+                </PopoverBody>
+              </PopoverContent>
+            </Popover>
           </div>
         </div>
         {isDrawerOpen &&
@@ -105,7 +161,7 @@ const Navbar = () => {
             </div>
           </div>
         }
-        {showNotification && <Notification />}
+        {/* {showNotification && <Notification />} */}
       </div>
     </>
   )

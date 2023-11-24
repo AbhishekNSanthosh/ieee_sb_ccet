@@ -224,6 +224,27 @@
     .notifyMob{
         display: block;
         margin-right: 1.4rem;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 }
+
+.customButton {
+    background-color: white;
+    cursor: default; /* This will remove the hover effect */
+  }
+
+  .notifyEmpty{
+    color: blue;
+  }
+
+  .nothingImg{
+    height: 5rem;
+  }
+
+  .notifyrow{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: center;
+    justify-content: center;
+  }
