@@ -223,8 +223,8 @@
 @media only screen and (max-width: 767px) {
     .notifyMob{
         display: block;
-        margin-right: 1.4rem;
-        font-size: 1.1rem;
+        margin-right: 0.7rem;
+        font-size: 1.5rem;
     }
 }
 

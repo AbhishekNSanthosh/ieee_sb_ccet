@@ -40,14 +40,14 @@ const Navbar = () => {
             <div className={styles.navbarItem}>
               <Popover>
                 <PopoverTrigger>
-                  <Button variant={"link"} colorScheme='white' mr={4}>
-                    <MdAddAlert className={styles.notify} onClick={() => {
+                  <Button variant={"link"} colorScheme='white' mr={4} size="0.5rem">
+                    <MdAddAlert className={styles.notifyMob} onClick={() => {
                       console.log(showNotification)
                       setShowNotification(!showNotification)
                     }} />
                   </Button>
                 </PopoverTrigger>
-                <PopoverContent width="90%" mr="10" top={3}>
+                <PopoverContent width="90%"  top={3}>
                   <PopoverArrow />
                   <PopoverCloseButton />
                   <PopoverHeader fontSize={20} fontWeight={600}>Notification </PopoverHeader>
