@@ -37,7 +37,7 @@
 
 @media only screen and (max-width: 767px) {
     .item {
-        height: 26.4rem;
+        height: 27rem;
         padding: 8px;
         display: flex;
         align-self: center;
