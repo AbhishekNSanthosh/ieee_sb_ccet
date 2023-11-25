@@ -7,7 +7,6 @@
     z-index: 9999;
 }
 
-
 @media only screen and (max-width: 767px) {
     .navbarContainer {
         position: fixed;
