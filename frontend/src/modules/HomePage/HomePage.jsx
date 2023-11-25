@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
 import Banner from '../../components/Banner/Banner'
 import styles from './HomePage.module.css'
 import About from '../../components/About/About'
 import { EventsData } from '../../utils/data'
 import ReachUs from '../../components/ReachUs/ReachUs'
-import Footer from '../../components/Footer/Footer'
 import EventList from '../../components/EventsList/EventList'
 import Aos from 'aos';
 import 'aos/dist/aos.css'

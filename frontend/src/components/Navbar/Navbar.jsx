@@ -8,7 +8,7 @@ import { BsJustify, BsChevronDoubleUp, BsChevronRight } from "react-icons/bs";
 import cslogo from '../../assets/cslogo.png'
 import { toast } from 'react-hot-toast';
 import { MdAddAlert } from "react-icons/md";
-import Notification from '../Notification/Notification'
+// import Notification from '../Notification/Notification'
 import nothing from '../../assets/nothing.svg'
 import {
   Popover,
@@ -16,10 +16,9 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor, Button, ButtonGroup
+  Button
 } from '@chakra-ui/react'
 
 const Navbar = () => {
@@ -28,7 +27,6 @@ const Navbar = () => {
   const navigate = useNavigate()
 
   return (
-    <>
       <div className={styles.navbarContainer}>
         <div className={styles.navbarWrapper}>
           <div className={styles.navbarLeft}>
@@ -163,7 +161,6 @@ const Navbar = () => {
         }
         {/* {showNotification && <Notification />} */}
       </div>
-    </>
   )
 }
 

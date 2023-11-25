@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import styles from './ExecomPage.module.css'
-import logo from '../../assets/bg.png'
 import MemberList from '../../components/MemberList/MemberList'
 import { CSExecom, SBExecom } from '../../utils/data'
 import { animateScroll } from 'react-scroll';
