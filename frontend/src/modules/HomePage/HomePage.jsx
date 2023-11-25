@@ -51,7 +51,7 @@ const HomePage = () => {
           }}>View more events from us</button>
         </div>
       </div>
-
+      
       <ReachUs />
     </div>
   )
